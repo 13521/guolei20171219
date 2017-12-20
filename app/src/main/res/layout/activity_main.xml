@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/aaa"
+        />
+    <TextView
+        android:id="@+id/text_title"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联想(Lenovo)拯救者R720 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T+128G SSD GTX1050Ti 4G IPS 黑"
+        />
+    <TextView
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff9933"
+        android:text="￥ 6666"
+        />
+
+</LinearLayout>
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#118a8a8a"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:background="#ff9933"
+        android:gravity="center"
+        android:text="进入购物车" />
+
+
+    <RadioButton
+        android:id="@+id/radio_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="加入购物车" />
+
+    <RadioButton
+        android:id="@+id/radio_03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="#ff9933"
+        android:gravity="center"
+        android:text="立即购买" />
+   </RadioGroup>
+
+</RelativeLayout>
